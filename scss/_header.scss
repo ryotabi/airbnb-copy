@@ -1,0 +1,44 @@
+header{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  .hd-left{
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    .hd-icon{
+      margin-left: 25px;
+      cursor: pointer;
+    }
+    .icon-item{
+      font-size: 30px;
+      color: #008489;
+    }
+
+    .hd-item{
+      margin-left: 35px;
+      font-size: 14px;
+      color: #484848;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .hd-item a:hover{
+      border-bottom: 1px solid;
+    }
+
+    .hd-item:nth-child(2){
+      color: #008489;
+      cursor: default;
+      border-bottom: 2px solid #008489;
+
+
+    }
+  }
+
+  .hd-right{
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+  }
+}
