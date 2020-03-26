@@ -129,6 +129,7 @@ header .hd-left .hd-icon {
 header .hd-left .icon-item {
   font-size: 30px;
   color: #008489;
+  padding-top: 5px;
 }
 header .hd-left .hd-item {
   margin-left: 35px;
@@ -149,6 +150,155 @@ header .hd-right {
   display: flex;
   justify-content: space-between;
   line-height: 80px;
+  text-align: center;
+}
+header .hd-right .hd-text {
+  font-size: 14px;
+  line-height: 80px;
+  color: #484848;
+}
+header .hd-right .hd-worming {
+  height: 80px;
+  width: 10px;
+  margin: 0 10px 0 3px;
+}
+header .hd-right .hd-worming a .icon-question {
+  line-height: 80px;
+  color: #484848;
+  font-size: 12px;
+}
+header .hd-right .hd-money {
+  font-size: 24px;
+  font-weight: bold;
+  color: #484848;
+  margin-right: 15px;
+  letter-spacing: -2px;
+}
+header .hd-right .hd-login {
+  margin-top: 20px;
+  margin-right: 77px;
+  width: 90px;
+  height: 40px;
+  background-color: #ff0055;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+.img-wrap {
+  background-image: url(../IMG_7454.JPG);
+  background-size: cover;
+  background-position: 0;
+  height: 565px;
+  width: 100%;
+  position: relative;
+}
+.img-wrap .fv-item {
+  background-color: #ffffff;
+  width: 36.4%;
+  height: 480px;
+  position: absolute;
+  top: 70px;
+  right: 90px;
+}
+
+.fv-item_wrap {
+  width: 84.9%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.fv-item_wrap .fv-title {
+  font-size: 39px;
+  color: #333;
+  line-height: 40px;
+  font-weight: bold;
+}
+.fv-item_wrap .fv-item_text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #484848;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.fv-item_wrap .place-form {
+  width: 100%;
+  height: 45px;
+  display: block;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.fv-item_wrap .select-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.fv-item_wrap .select-wrap #roomType {
+  width: 56.9%;
+  height: 50px;
+  color: #484848;
+  border-radius: 4px;
+}
+.fv-item_wrap .select-wrap #userNum {
+  width: 39.2%;
+  height: 50px;
+  color: #484848;
+  border-radius: 4px;
+}
+
+.fv-money_wrap {
+  display: flex;
+  margin-top: 30px;
+}
+.fv-money_wrap .fv-money {
+  font-size: 40px;
+  font-weight: bold;
+  color: #484848;
+}
+.fv-money_wrap .fv-money_text {
+  font-size: 14px;
+  color: #484848;
+  line-height: 53px;
+}
+.fv-money_wrap .icon-question {
+  line-height: 53px;
+  color: #484848;
+  font-size: 12px;
+}
+
+.fv-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #ff0080;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+
+.text_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 76.5%;
+  margin: 0 auto;
+}
+.text_wrap .text {
+  margin-top: 70px;
+}
+.text_wrap .fv-text-first {
+  margin-right: 90px;
+}
+.text_wrap .text-title {
+  font-size: 24px;
+  color: #484848;
+  font-weight: bold;
+}
+.text_wrap .text-item {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #484848;
+  line-height: 28px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -14,6 +14,7 @@ header{
     .icon-item{
       font-size: 30px;
       color: #008489;
+      padding-top: 5px;
     }
 
     .hd-item{
@@ -40,5 +41,51 @@ header{
     display: flex;
     justify-content: space-between;
     line-height: 80px;
+    text-align: center;
+
+    .hd-text{
+      font-size: 14px;
+      line-height: 80px;
+      color: #484848;
+    }
+    
+    
+    .hd-worming{
+      height: 80px;
+      width: 10px;
+      margin: 0 10px 0 3px;
+      a{
+        
+        .icon-question{
+          line-height: 80px;
+          color: #484848;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .hd-money {
+      font-size: 24px;
+      font-weight: bold;
+      color: #484848;
+      margin-right: 15px;
+      letter-spacing: -2px;
+    }
+
+    .hd-login{
+      margin-top: 20px;
+      margin-right: 77px;
+      width: 90px;
+      height: 40px;
+      background-color: rgb(255, 0, 85);
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+    
+    
+    
+    
   }
 }
