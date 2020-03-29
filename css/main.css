@@ -112,6 +112,26 @@ input, select {
 }
 
 /*# sourceMappingURL=reset.css.map */
+body {
+  font-size: 62.5%;
+}
+
+.border {
+  width: 60px;
+  margin: 110px auto 0;
+  height: 2px;
+  background-color: #484848;
+}
+
+.title {
+  width: 47%;
+  font-size: 5em;
+  color: #333;
+  margin: 25px auto 0;
+  font-weight: bold;
+  text-align: center;
+}
+
 header {
   height: 80px;
   display: flex;
@@ -279,12 +299,12 @@ header .hd-right .hd-login {
 
 .text_wrap {
   display: flex;
-  justify-content: space-between;
-  width: 76.5%;
+  width: 76.1%;
   margin: 0 auto;
 }
 .text_wrap .text {
   margin-top: 70px;
+  width: 45.7%;
 }
 .text_wrap .fv-text-first {
   margin-right: 90px;
@@ -299,6 +319,133 @@ header .hd-right .hd-login {
   font-size: 16px;
   color: #484848;
   line-height: 28px;
+}
+
+.host-wrap {
+  margin: 70px auto 0;
+  display: flex;
+  width: 76.1%;
+  justify-content: space-between;
+}
+.host-wrap .host-item {
+  width: 30.9%;
+}
+.host-wrap .host-item .host-item:nth-child(3) {
+  width: 23%;
+}
+.host-wrap .host-item .check-icon {
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #484848;
+  border-radius: 50%;
+}
+.host-wrap .host-item .item-title {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #484848;
+  font-weight: bold;
+}
+.host-wrap .host-item .item-text {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #484848;
+}
+
+.host-link {
+  width: 81%;
+  display: block;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #006c70;
+  cursor: pointer;
+}
+
+.host-link:hover {
+  border-bottom: 1px solid #006c70;
+}
+
+.host-exam {
+  width: 81.7%;
+  height: 515px;
+  display: flex;
+  margin: 165px auto 0;
+}
+.host-exam .exam-item {
+  margin: 35px 10.4% 75px 0;
+  width: 42.7%;
+}
+.host-exam .exam-item .quote {
+  color: #fdb32b;
+  font-size: 40px;
+}
+.host-exam .exam-item .exam-text_main {
+  margin-top: 15px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #484848;
+}
+.host-exam .exam-item .exam-text_sub {
+  font-size: 16px;
+  color: #767676;
+  line-height: 22px;
+  margin-top: 25px;
+}
+.host-exam .exam-item .exam-button {
+  font-size: 16px;
+  color: #484848;
+  width: 222px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 28px;
+  border: solid 2px #484848;
+  font-weight: bold;
+  cursor: pointer;
+}
+.host-exam .exam-img {
+  width: 50.4%;
+  height: 515px;
+  background-image: url(../8e6c68cc-e714-4849-bad9-464abf58e84a.jpg);
+  background-size: cover;
+}
+
+.system-wrap {
+  margin: 70px 19% 0 9.5%;
+  display: flex;
+}
+
+.system-item_left {
+  margin: 15px 11.9% 0 0;
+  width: 46.7%;
+  height: 255px;
+}
+.system-item_left .system-left_text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #484848;
+}
+.system-item_left .system-left_link {
+  width: 69%;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #006c70;
+  cursor: pointer;
+}
+.system-item_left .system-left_link:hover {
+  border-bottom: 1px solid #006c70;
+}
+
+.system-right_wrap {
+  width: 30.5%;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,109 @@
+
+
+.host-wrap{
+  margin: 70px auto 0;
+  display: flex;
+   width: 76.1%;
+  justify-content: space-between;
+
+  .host-item{
+  width: 30.9%;
+
+
+  .host-item:nth-child(3){
+    width: 23%;
+  }
+
+  .check-icon{
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #484848;
+    border-radius: 50%;
+  }
+
+
+
+  .item-title{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #484848;
+    font-weight: bold;
+  }
+
+  .item-text{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #484848;
+  }
+  }
+
+}
+
+.host-link{
+  width: 81%;
+  display: block;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #006c70;
+  cursor: pointer;
+}
+
+.host-link:hover{
+  border-bottom: 1px solid #006c70;
+}
+
+.host-exam{
+  width: 81.7%;
+  height: 515px;
+  display: flex;
+  margin: 165px auto 0;
+
+  .exam-item{
+    margin: 35px 10.4% 75px 0;
+    width: 42.7%;
+
+    .quote{
+      color: #fdb32b;
+      font-size: 40px;
+    }
+
+    .exam-text_main{
+      margin-top: 15px;
+      font-size: 32px;
+      line-height: 40px;
+      color: #484848;
+    }
+
+    .exam-text_sub{
+      font-size: 16px;
+      color: #767676;
+      line-height: 22px;
+      margin-top: 25px;
+    }
+
+    .exam-button{
+      font-size: 16px;
+      color: #484848;
+      width: 222px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      margin-top: 28px;
+      border: solid 2px #484848;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .exam-img{
+    width: 50.4%;
+    height: 515px;
+    background-image: url(../8e6c68cc-e714-4849-bad9-464abf58e84a.jpg);
+  background-size: cover;
+  }
+}
