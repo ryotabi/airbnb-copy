@@ -1,3 +1,7 @@
+.empty{
+  height: 80px;
+}
+
 .img-wrap{
   background-image: url(../IMG_7454.JPG);
   background-size: cover;
@@ -5,6 +9,7 @@
   height: 565px;
   width: 100%;
   position: relative;
+ 
 
   .fv-item{
     background-color: #ffffff;

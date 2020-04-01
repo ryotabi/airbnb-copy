@@ -1,0 +1,28 @@
+.num{
+  .title{
+    width: 62%;
+  }
+
+  .num-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 70.4%;
+    margin: 70px auto 0;
+
+    .num-item{
+      width: 28%;
+      text-align: center;
+
+      .num-text{
+        font-size: 5em;
+        color: #484848;
+      }
+
+      .num-sub{
+        margin-top: 20px;
+        font-size: 1.6em;
+        color: #484848;
+      }
+    }
+  }
+}

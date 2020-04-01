@@ -1,0 +1,84 @@
+.q-wrap{
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 81.9%;
+  margin: 95px auto 0;
+
+  .q-item{
+    width: 45%;
+    border-bottom:1px solid #eee ;
+    margin-right: 10px;
+    padding: 25px 0 35px 0;
+
+    .q-text{
+  font-size: 18px;
+  color: #008489;
+  cursor: pointer;
+
+}
+
+  .q-text:hover{
+  border-bottom: 1px solid #008489;
+}
+  }
+}
+
+.q-exam{
+  width: 81.9%;
+  margin: 105px auto 0;
+
+  .q-title{
+    font-size: 24px;
+    color: #484848;
+    font-weight: bold;
+  }
+  
+  .q-exam_wrap{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+    .q-exam_item{
+      margin-right: 15px;
+      width: 32.5%;
+      
+      .q-exam_title{
+        font-size: 16px;
+        color: #484848;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    
+      .q-exam_text{
+        font-size: 14px;
+        color: #484848;
+        margin-top: 10px;
+      }
+    
+      .q-exam_link{
+        font-size: 14px;
+        color: #008489;
+        margin-top: 15px;
+      }
+      
+    }
+    
+    .q-img1{
+      background-image: url(../q-img1.jpg);
+      background-size: cover;
+      height: 190px;
+
+    }
+    .q-img2{
+      background-image: url(../q-img2.jpg);
+      background-size: cover;
+      height: 190px;
+    }
+    .q-img3{
+      background-image: url(../q-img3.jpg);
+      background-size: cover;
+      height: 190px;
+    }
+  }
+}

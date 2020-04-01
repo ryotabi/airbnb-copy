@@ -1,0 +1,96 @@
+.ft-mainwrap{
+  width: 81.9%;
+  margin: 110px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ft-wrap{
+width: 25%;
+  
+.ft-title{
+  font-size: 14px;
+  color: #484848;
+  font-weight: bold;
+}
+.ft-list_wrap{
+  margin-top: 25px;
+}
+
+.ft-list{
+  font-size: 14px;
+  color: #767676;
+}
+
+.ft-list span{
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+
+
+.ft-list span:hover{
+  border-bottom: 1px solid #767676;
+}
+.ft-list:last-child{
+  margin-bottom: 0;
+}
+}
+
+.ft-border{
+  width: 81.9%;
+  margin: 25px auto 0;
+  background-color: #eee;
+  height: 1px;
+}
+
+.ft-subwrap{
+  width: 81.9%;
+  height: 55px;
+  margin: 20px auto 50px;
+  display: flex;
+
+  .ft-icon{
+    margin-right: 5px;
+    line-height: 55px;
+  }
+
+  .ft-mainitem, .ft-subitem, small{
+    font-size: 14px;
+    color: #767676;
+    
+  }
+
+  .ft-mainitem:hover, .ft-subitem:hover, small a:hover{
+    display: inline-block;
+    border-bottom: 1px solid #767676;
+  }
+
+
+  .ft-mainitem, small{
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .ft-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 36.9%;
+    
+  }
+
+  .ft-icon_item{
+    font-size: 25px;
+    color: #484848;
+  }
+
+  .fb-item,.twitter-item,.insta-item{
+    font-size: 20px;
+    color: #484848;
+  }
+
+  .fb,.twitter{
+    margin-right: 20px;
+  }
+}

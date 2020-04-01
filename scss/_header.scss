@@ -2,6 +2,10 @@ header{
   height: 80px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
 
   .hd-left{
     display: flex;
