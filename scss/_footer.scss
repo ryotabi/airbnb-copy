@@ -3,6 +3,12 @@
   margin: 110px auto 0;
   display: flex;
   justify-content: space-between;
+  @include tab{
+    margin-left: 25px;
+  }
+  @include sp{
+    display: none;
+  }
 }
 
 .ft-wrap{
@@ -43,6 +49,9 @@ width: 25%;
   margin: 25px auto 0;
   background-color: #eee;
   height: 1px;
+  @include sp{
+    display: none;
+  }
 }
 
 .ft-subwrap{
@@ -50,10 +59,19 @@ width: 25%;
   height: 55px;
   margin: 20px auto 50px;
   display: flex;
+  @include tab{
+    width: 95.9%;
+  }
+  @include sp{
+    margin-top: 70px;
+    margin-bottom: 30px
+    ;
+  }
 
   .ft-icon{
     margin-right: 5px;
     line-height: 55px;
+  
   }
 
   .ft-mainitem, .ft-subitem, small{
@@ -72,17 +90,33 @@ width: 25%;
     display: block;
     margin-top: 5px;
   }
+
+  small{
+    @include tab{
+      width: 116%;
+    }
+    a{
+      @include sp{
+        display: none;
+      }
+    }
+  }
   
   .ft-icons{
     display: flex;
     justify-content: space-between;
     margin-left: 36.9%;
-    
+    @include sp{
+      display: none;
+    }
   }
 
   .ft-icon_item{
     font-size: 25px;
     color: #484848;
+    @include sp{
+      font-size: 14px;
+    }
   }
 
   .fb-item,.twitter-item,.insta-item{

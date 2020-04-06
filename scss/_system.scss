@@ -1,12 +1,25 @@
 .system-wrap{
   margin: 70px 19% 0 9.5%;
   display: flex;
+  @include tab {
+    flex-direction: column;
+    width: 65.4%;
+    margin: 70px auto 0;
+  }
+  @include sp {
+    width: 93%;
+    margin-top: 60px;
+  }
 }
 
 .system-item_left{
   margin: 15px 11.9% 0 0;
   width: 46.7%;
   height: 255px;
+  @include tab{
+    height: auto;
+    width: 100%;
+  }
 
   .system-left_text{
     font-size: 16px ;
@@ -32,6 +45,11 @@
 
   width: 46%;
     height: 240px;
+    @include tab {
+      width: 100%;
+      height: auto;
+      margin-top: 45px;
+    }
 
   .system-right_wrap{
     display: flex;
@@ -61,4 +79,12 @@
   margin:100px auto 0;
   background-image: url(../system-img.jpg);
   background-size: cover;
+  @include tab{
+    width: 65.4%;
+    height: 410px;
+  }
+  @include sp{
+    height: 670px;
+    width: 93%;
+  }
 }

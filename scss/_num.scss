@@ -1,6 +1,10 @@
 .num{
   .title{
     width: 62%;
+    @include sp{
+      width: 93%;
+      text-align: left;
+    }
   }
 
   .num-wrap{
@@ -8,20 +12,41 @@
     justify-content: space-between;
     width: 70.4%;
     margin: 70px auto 0;
+    @include sp{
+      flex-direction: column;
+      width: 93%;
+      margin: 50px auto 0;
+    }
 
     .num-item{
       width: 28%;
       text-align: center;
-
+      @include sp{
+        width: 100%;
+        text-align: left;
+        margin-top: 45px;
+      }
+      
       .num-text{
         font-size: 5em;
         color: #484848;
+        @include tab{
+          font-size: 4em;
+        }
       }
-
+      
       .num-sub{
         margin-top: 20px;
         font-size: 1.6em;
         color: #484848;
+        @include tab{
+          font-size: 1.4em;
+        }
+      }
+    }
+    .num-item:first-child{
+      @include sp{
+        margin-top: 0;
       }
     }
   }

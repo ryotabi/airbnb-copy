@@ -4,12 +4,23 @@
   flex-wrap: wrap;
   width: 81.9%;
   margin: 95px auto 0;
+  @include tab{
+    flex-direction: column;
+    width: 65.9%;
+  }
+  @include sp{
+    width: 93%;
+    padding: 0;
+  }
 
   .q-item{
     width: 45%;
     border-bottom:1px solid #eee ;
     margin-right: 10px;
     padding: 25px 0 35px 0;
+    @include tab{
+      width: 100%;
+    }
 
     .q-text{
   font-size: 18px;
@@ -27,6 +38,13 @@
 .q-exam{
   width: 81.9%;
   margin: 105px auto 0;
+  @include tab{
+    width: 65.9%;
+  }
+  @include sp{
+    width: 93%;
+   
+  }
 
   .q-title{
     font-size: 24px;
@@ -38,10 +56,19 @@
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
+    @include sp{
+      display: none;
+    
+    }
     
     .q-exam_item{
       margin-right: 15px;
       width: 32.5%;
+      @include tab{
+        border: 1px solid #eee;
+        box-sizing: 1px #eee;
+        padding: 10px 15px;
+      }
       
       .q-exam_title{
         font-size: 16px;
@@ -60,6 +87,9 @@
         font-size: 14px;
         color: #008489;
         margin-top: 15px;
+        @include tab{
+          display: none;
+        }
       }
       
     }
@@ -68,17 +98,126 @@
       background-image: url(../q-img1.jpg);
       background-size: cover;
       height: 190px;
+      @include tab{
+        height: 105px;
+      }
 
     }
     .q-img2{
       background-image: url(../q-img2.jpg);
       background-size: cover;
       height: 190px;
+      @include tab{
+        height: 105px;
+      }
     }
     .q-img3{
       background-image: url(../q-img3.jpg);
       background-size: cover;
       height: 190px;
+      @include tab{
+        height: 105px;
+      }
     }
   }
 }
+
+
+  //sp用//
+  
+    
+    .spq-exam_wrap{
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      @include sp{
+      flex-direction: column;
+      }
+      
+      .spq-exam_item{
+        margin-right: 15px;
+        width: 32.5%;
+        @include tab{
+          border: 1px solid #eee;
+          box-sizing: 1px #eee;
+          padding: 10px 15px;
+        }
+        @include sp{
+          width: 100%;
+          padding: 0;
+      margin-bottom: 15px;
+
+        }
+        .sp-exam_wrap{
+          @include sp{
+            display: flex;
+          }
+          .sp-wrap{
+            @include sp{
+              margin-left: 20px;
+            }
+          }
+        }
+        .spq-exam_title{
+          font-size: 16px;
+          color: #484848;
+          margin-top: 20px;
+          font-weight: bold;
+        }
+      
+        .spq-exam_text{
+          font-size: 14px;
+          color: #484848;
+          margin-top: 10px;
+        }
+      
+        .spq-exam_link{
+          font-size: 14px;
+          color: #008489;
+          margin-top: 15px;
+          @include tab{
+            display: none;
+          }
+        }
+        
+      }
+      
+      .spq-img1{
+        background-image: url(../q-img1.jpg);
+        background-size: cover;
+        height: 190px;
+        @include tab{
+          height: 105px;
+        }
+        @include sp{
+          width: 16%;
+          height: 80px;
+        }
+  
+      }
+      .spq-img2{
+        background-image: url(../q-img2.jpg);
+        background-size: cover;
+        height: 190px;
+        @include tab{
+          height: 105px;
+        }
+        @include sp{
+          width: 16%;
+          height: 80px;
+        }
+      }
+      .spq-img3{
+        background-image: url(../q-img3.jpg);
+        background-size: cover;
+        height: 190px;
+        @include tab{
+          height: 105px;
+        }
+        @include sp{
+          width: 16%;
+          height: 80px;
+        }
+      }
+    }
+  

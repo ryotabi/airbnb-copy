@@ -2,14 +2,29 @@
   display: flex;
   width: 76.9%;
   margin: 75px auto 0;
+  @include tab{
+    flex-direction: column;
+    width: 55.3%;
+  }
+  @include sp{
+    width: 93%;
+    
+  }
 
   .about-item-left{
     width: 45.3%;
     margin-right: 8%;
+    @include tab{
+      width: 100%;
+    }
   }
 
   .about-item-right{
     width: 45.9%;
+    @include tab{
+      width: 100%;
+      margin-top: 60px;
+    }
   }
 
   .about-title{

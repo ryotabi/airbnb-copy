@@ -5,13 +5,28 @@
   display: flex;
    width: 76.1%;
   justify-content: space-between;
-
+  @include tab {
+    flex-direction: column;
+    width: 53.8%;
+  }
+  
+  @include sp {
+    width: 93%;
+  }
   .host-item{
   width: 30.9%;
+  @include tab {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
 
   .host-item:nth-child(3){
     width: 23%;
+    @include tab {
+      margin-bottom: 0;
+      width: 100%;
+    }
   }
 
   .check-icon{
@@ -63,13 +78,33 @@
   display: flex;
   margin: 165px auto 0;
 
+  @include tab{
+    width: 66.4%;
+    margin: 0 auto;
+  }
+  @include sp{
+    width: 93%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
   .exam-item{
     margin: 35px 10.4% 75px 0;
     width: 42.7%;
+    @include tab{
+      width: 45%;
+    }
+    @include sp{
+      width: 100%;
+    }
 
     .quote{
       color: #fdb32b;
       font-size: 40px;
+      @include tab{
+        font-size: 20px;
+      }
     }
 
     .exam-text_main{
@@ -77,6 +112,14 @@
       font-size: 32px;
       line-height: 40px;
       color: #484848;
+      @include tab{
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 10px;
+      }
+      @include sp{
+        letter-spacing: -0.1px;
+      }
     }
 
     .exam-text_sub{
@@ -84,6 +127,12 @@
       color: #767676;
       line-height: 22px;
       margin-top: 25px;
+      @include tab{
+        font-size: 14px;
+        margin-top: 20px;
+      }
+      
+
     }
 
     .exam-button{
@@ -97,6 +146,11 @@
       border: solid 2px #484848;
       font-weight: bold;
       cursor: pointer;
+      @include tab{
+        font-size: 16px;
+        border-radius: 4px;
+        margin-top: 15px;
+      }
     }
   }
 
@@ -105,5 +159,13 @@
     height: 515px;
     background-image: url(../8e6c68cc-e714-4849-bad9-464abf58e84a.jpg);
   background-size: cover;
+  @include tab{
+    height: 325px;
+    margin-top: 36px;
+  }
+  @include sp{
+    width: 100%;
+    height: 675px;
+  }
   }
 }

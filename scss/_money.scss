@@ -1,6 +1,9 @@
 .money{
   .title{
     font-size: 6em;
+    @include tab{
+      font-size: 4em;
+    }
   }
 
   .money-item_wrap{
@@ -8,35 +11,58 @@
     justify-content: space-between;
     width: 82%;
     margin: 70px auto 0;
+    @include tab{
+      flex-direction: column;
+      width: 54.8%;
+    }
+    @include sp{
+      width: 93%;
+    }
 
     .money-item{
       width: 28.7%;
+      @include tab{
+        width: 100%;
+        margin-top: 50px;
+      }
       .money-title{
         font-size: 24px;
         color: #484848;
         font-weight: bold;
-      text-align: center;
-
+        text-align: center;
+        @include tab {
+          text-align: left;
+        }
+        
       }
-
+      
       .money-text{
         margin-top: 30px;
         font-size: 16px;
         line-height: 28px;
         color: #484848;
+        @include sp{
+          margin-top: 20px;
+          line-height: 22px;
+        }
       }
-
+      
       .money-link{
-            width: 88%;
-  margin-top: 25px;
-  font-size: 16px;
-  color: #006c70;
-  cursor: pointer;
+        width: 88%;
+        margin-top: 25px;
+        font-size: 16px;
+        color: #006c70;
+        cursor: pointer;
       }
-
-       .money-link:hover{
-  border-bottom: 1px solid #006c70;
-}
+      
+      .money-link:hover{
+        border-bottom: 1px solid #006c70;
+      }
+    }
+    .money-item:first-child{
+      @include tab {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -46,21 +72,46 @@
   height: 515px;
   display: flex;
   margin: 165px auto 0;
+   @include tab{
+      width: 65.9%;
+      height: auto;
+    }
+    @include sp{
+      flex-direction: column;
+      width: 93%;
+    }
   
   .money_exam-img{
     width: 50%;
     height: 515px;
     background-image: url(../momey-img.jpg);
   background-size: cover;
+  @include tab {
+    height: 325px;
+  }
+  @include sp{
+    height: 670px;
+    width: 100%;
+  }
   }
   .money_exam-item{
     margin: 110px 0 75px 8.2%;
     width: 42.7%;
+    @include tab{
+      margin: 35px 0 0 8.2%;
+    }
+    @include sp{
+      width: 100%;
+      margin: 10px 0 0 0;
+    }
     
 
     .quote{
       color: #fdb32b;
       font-size: 40px;
+      @include tab{
+        font-size: 20px;
+      }
     }
 
     .money_exam-text_main{
@@ -68,6 +119,11 @@
       font-size: 32px;
       line-height: 40px;
       color: #484848;
+       @include tab{
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 10px;
+      }
     }
 
     .money_exam-text_sub{
@@ -75,6 +131,10 @@
       color: #767676;
       line-height: 22px;
       margin-top: 25px;
+          @include tab{
+        font-size: 14px;
+        margin-top: 20px;
+      }
     }
 
     .money_exam-button{
@@ -88,6 +148,11 @@
       border: solid 2px #484848;
       font-weight: bold;
       cursor: pointer;
+         @include tab{
+        font-size: 16px;
+        border-radius: 4px;
+        margin-top: 15px;
+      }
     }
   }
 }

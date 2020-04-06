@@ -6,6 +6,9 @@ header{
   z-index: 1;
   background-color: #fff;
   width: 100%;
+  @include tab{
+    display:none
+  }
 
   .hd-left{
     display: flex;

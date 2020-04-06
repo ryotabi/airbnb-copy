@@ -1,6 +1,81 @@
+.ham-wrap{
+display: none;
+  @include tab{
+    display :block  ;
+    max-height: 0;
+    transition: ease 1s all;
+    // transform: translateY(-150px);
+    // z-index: 1;
+    
+  }
+   i{
+      
+    font-size: 25px;
+    color: rgb(167, 243, 237);
+    cursor: pointer;
+  padding-top: 30px;
+  padding-left: 25px;
+
+  }
+ 
+  .ham-text_wrap{
+    width:93%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    margin-top: 30px;
+    .ham-text{
+        color: #484848;
+        margin-top: 20px;
+        font-size: 14px;
+      
+      
+    }
+    .ham-text:hover{
+      border-bottom: 1px solid #484848;
+    }
+  }
+}
+
+.ham-wrap.active{
+  display: none;
+  @include tab{
+    display: block;
+  //  transform: translateY(150px);
+  max-height: 300px;
+    transition: all 3s ease;
+    width: 100%;
+  
+  }
+
+  }
+  
+ 
+  
+
+
 .empty{
   height: 80px;
+  @include tab{
+    height:0;
+  }
 }
+
+
+.ham{
+  display: none;
+  @include tab{
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+   
+  padding-top: 30px;
+  padding-left: 25px;
+  }
+}
+
 
 .img-wrap{
   background-image: url(../IMG_7454.JPG);
@@ -9,7 +84,13 @@
   height: 565px;
   width: 100%;
   position: relative;
- 
+
+ @include tab{
+   height: 310px;
+ }
+ @include sp{
+   height: 240px;
+ }
 
   .fv-item{
     background-color: #ffffff;
@@ -18,8 +99,31 @@
     position: absolute;
     top:70px;
     right: 90px;
+    @include tab{
+     display: none;
+    }
+  }
+
+  .tabfv-title{
+    display: none;
+    @include tab{
+      display: block;
+      width: 80%;
+      margin: 150px auto 0;
+      display: block;
+      font-size: 40px;
+      color: #fff;
+      font-weight: bold;
+      
+    }
+    @include sp {
+      font-size: 34px;
+      width: 93%;
+      margin: 90px auto 0;
+    }
   }
 }
+
 .fv-item_wrap{
   width: 84.9%;
   margin: 0 auto;
@@ -30,6 +134,7 @@
     color: #333;
     line-height: 40px;
     font-weight: bold;
+  
   }
 
   .fv-item_text{
@@ -102,13 +207,191 @@
     margin-top: 15px;
 }
 
-.text_wrap{
+
+.tabfv-entrywrap{
+  display: none;
+  @include tab {
+    display: block;
+    width: 70.5%;
+    margin: 0 auto;
+  }
+
+  @include sp{
+    width: 93%;
+    
+  }
+  .tabfv-item_text{
+    display: none;
+    @include tab{
+      display:block;
+      margin-top: 25px;
+      font-size: 16px;
+      color: #484848;
+      font-weight: bold;
+    }
+    @include sp{
+      font-size: 18px;
+      margin-top: 28px;
+    }
+  }
+  
+  .tabfv-form{
+    display: none;
+    @include tab{
+      
+      display: block;
+      margin-top: 10px;
+      width: 100%;
+      
+    }
+  }
+
+  .tabplace-form{
+    display: none;
+    @include tab{
+      display: block;
+      width: 100%;
+      height: 45px;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #484848;
+    }
+  }
+
+  .tabselect-wrap{
+    @include sp{
+
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  #tabroomType,#tabuserNum{
+    display: none;
+    @include tab{
+      display: inline-block;
+      margin-top: 5px;
+      height: 45px;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #484848;
+    }
+    
+  }
+
+  #tabroomType{
+    display: none;
+    @include tab {
+      display: inline-block;
+      width: 60%;
+      margin-right: 20px;
+    }
+    @include sp{
+      display: block;
+      width: 100%;
+    }
+  }
+  #tabuserNum{
+    display: none;
+    @include tab {
+      display: inline-block;
+      width: 34.6%;
+    }
+    @include sp{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .tabfv-money_wrap{
+    display: none;
+    @include tab {
+      display: flex;
+
+      margin-top: 30px;
+    }
+    @include sp{
+      margin-top: 25px;
+    }
+    .tabfv-money{
+      display: none;
+      @include tab{
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 40px;
+        color: #333;
+      }
+      @include sp{
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+  
+    .tabfv-money_text{
+      display: none;
+      @include tab{
+        display: block;
+        margin-right: 5px;
+        font-size: 14px;
+        color: #484848;
+        line-height: 45px;
+      }
+    }
+
+    .tabicon-question{
+      display: none;
+      @include tab {
+        display: block;
+        font-size: 14px;
+        line-height: 45px;
+        color: #484848;
+      }
+    }
+  }
+
+  .tabfv-btn{
+    display: none;
+    @include tab{
+      display: block;
+      width: 100%;
+      height: 45px;
+      margin-top: 30px;
+      border-radius: 4px;
+      background-color: rgb(255, 0, 128);
+      font-size: 16px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    @include sp{
+      margin-top: 15px;
+    }
+  }
+
+    }
+
+#text_wrap{
   display: flex;
   width: 76.1%;
   margin: 0 auto;
+
+  @include tab{
+    flex-direction: column;
+    width: 53.8%;
+    
+  }
+  @include sp{
+    width: 93%;
+  }
   .text{
     margin-top: 70px;
     width: 45.7%;
+    @include tab{
+      width: 100%;
+    }
+    @include sp{
+      margin-top: 50px;
+    }
   }
   .fv-text-first{
     margin-right: 90px;
@@ -125,6 +408,11 @@
     font-size: 16px;
     color: #484848;
     line-height: 28px;
+    @include sp{
+      line-height: 22px;
+      margin-top: 20px;
+    }
+
   }
 }
 
